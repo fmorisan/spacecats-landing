@@ -1,16 +1,14 @@
-import React from 'react';
+import React from 'react'
+import Youtube from 'react-youtube-embed'
 import './App.css';
 import Header from './layout/Header'
 
-import team from './layout/assets/sections/1.svg'
-import allTeams2019 from './layout/assets/sections/1.svg'
-import cat from './layout/assets/sections/1.svg'
-import iconCat from './layout/assets/sections/1.svg'
-// import allTeams2019 from './layout/assets/sections/spaceapps2019.jpeg'
-// import cat from './layout/assets/sections/cat.png'
-// import iconCat from './layout/assets/sections/icon cat.png'
+import team from './layout/assets/sections/team.jpeg'
+import allTeams2019 from './layout/assets/sections/spaceapps2019.jpeg'
+import cat from './layout/assets/sections/cat.png'
+import iconCat from './layout/assets/sections/iconcat.svg'
 
-import {Section, SectionCard} from './layout/Section'
+import {Section, SectionCard, VideoCard} from './layout/Section'
 
 function Carousel() {
   return <div></div>
@@ -60,10 +58,11 @@ function App() {
               It was quite the experience, being awarded the local "Most Inspirational" award
             </SectionCard>
           </Section>
-          <Section name="Our projects" vertical>
-              <SectionCard>
-
-              </SectionCard>
+          <Section name="Our projects">
+              <VideoCard>
+                <h2>2019: Build your own planet!</h2>
+                <Youtube id="dQw4w9WgXcQ" />
+              </VideoCard>
           </Section>
           <Section name="The Team">
             <Carousel />

@@ -37,7 +37,7 @@
     color: lightblue;
     font-weight: bold;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-flow: column;
 }
 
@@ -48,17 +48,18 @@
 }
 
 .section-card-container[data-vertical=true] {
-    flex-flow: column;  
+    flex-flow: column;
 }
 
 .section-card-container[data-vertical=true] .section-card {
     width: 90vw;
     flex-flow: row;
+    justify-content: space-between;
 }
 
 .section-card-container[data-vertical=true] .section-card img {
-    max-height: 200px;
-    width: auto;
+    height: auto;
+    width: 15em;
     flex-flow: row;
 }
 
@@ -69,4 +70,14 @@
     .section-card {
         width: 90%;
     }
+}
+
+.video-card {
+    width: 70%;
+    flex-flow: row;
+    margin: 0 auto;
+    padding: 1em;
+    align-items: center;
+    background-color: #170041;
+    border-radius: 1em;
 }

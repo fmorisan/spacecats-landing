@@ -22,3 +22,12 @@ export function SectionCard({image, children}) {
         </div>
     )
 }
+
+export function VideoCard({children}) {
+    return (
+        <div className="video-card">
+            {children}
+        </div>
+
+    )
+}
