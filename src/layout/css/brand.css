@@ -1,0 +1,11 @@
+@media (width <= 768px) {
+    #logo {
+        display: none;
+    }
+}
+
+#logo {
+    height: 30vh;
+    margin-bottom: -50px;
+    margin-top: -30px;
+}
