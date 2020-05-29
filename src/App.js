@@ -2,10 +2,13 @@ import React from 'react';
 import './App.css';
 import Header from './layout/Header'
 
-import team from './layout/assets/sections/team.jpeg'
-import allTeams2019 from './layout/assets/sections/spaceapps2019.jpeg'
-import cat from './layout/assets/sections/cat.png'
-import iconCat from './layout/assets/sections/icon cat.png'
+import team from './layout/assets/sections/1.svg'
+import allTeams2019 from './layout/assets/sections/1.svg'
+import cat from './layout/assets/sections/1.svg'
+import iconCat from './layout/assets/sections/1.svg'
+// import allTeams2019 from './layout/assets/sections/spaceapps2019.jpeg'
+// import cat from './layout/assets/sections/cat.png'
+// import iconCat from './layout/assets/sections/icon cat.png'
 
 import {Section, SectionCard} from './layout/Section'
 
@@ -42,11 +45,13 @@ function App() {
           </Section>
           <Section name="Our history" vertical>
             <SectionCard key="a" image={team}>
-              We started working together in 2019, on the first SpaceApps Challenge that was hosted in La Plata, Buenos Aires, Argentina.
+              We started working together in 2019,
+              on the first SpaceApps Challenge that was hosted in La Plata, Buenos Aires, Argentina.
             </SectionCard>
             <SectionCard image={iconCat}>
               We built a game based on the "Build a Planet" challenge - where the player customized
-              their own planet using real data from NASA, eventually being surrounded by other people's planets
+              their own planet using real data from NASA,
+              eventually being surrounded by other people's planets
               in a virtual solar system and galaxy.
             </SectionCard>
             <SectionCard image={allTeams2019}>
@@ -57,7 +62,7 @@ function App() {
           </Section>
           <Section name="Our projects" vertical>
               <SectionCard>
-                
+
               </SectionCard>
           </Section>
           <Section name="The Team">
