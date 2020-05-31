@@ -8,11 +8,16 @@ import allTeams2019 from './layout/assets/sections/spaceapps2019.jpeg'
 import cat from './layout/assets/sections/cat.png'
 import iconCat from './layout/assets/sections/iconcat.svg'
 
-import {Section, SectionCard, VideoCard} from './layout/Section'
+import aby from './layout/assets/people/aby.png'
+import feli from './layout/assets/people/feli.png'
+import male from './layout/assets/people/male.png'
+import azul from './layout/assets/people/azul.png'
+import lucas from './layout/assets/people/lucas.png'
+import fran from './layout/assets/people/fran.png'
 
-function Carousel() {
-  return <div></div>
-}
+import {Section, SectionCard, VideoCard} from './layout/Section'
+import {Carousel} from './layout/Carousel'
+
 function App() {
   return (
     <>
@@ -61,11 +66,43 @@ function App() {
           <Section name="Our projects">
               <VideoCard>
                 <h2>2019: Build your own planet!</h2>
-                <Youtube id="dQw4w9WgXcQ" />
+                <Youtube id="PpA_zegOq9w" />
               </VideoCard>
           </Section>
           <Section name="The Team">
-            <Carousel />
+            <Carousel>
+              <div>
+                <img src={aby} alt="Aby" />
+                <h3>Abril Aleuy</h3>
+                <p>Creative Student of Design and Development of Multimedia Art Content. UNLP - Multimedia Design (...and superhero at night)</p>
+              </div>
+              <div>
+                <img src={feli} alt="Feli" />
+                <h3>Felipe Buiras</h3>
+                <p>CS student at UNLP and Blockchain Developer, cat lover</p>
+              </div>
+              <div>
+                <img src={male} alt="Male" />
+                <h3>Malena Galván</h3>
+                <p>20 años. Estudiante en la carrera de Diseño Multimedial de la Universidad Nacional de La Plata. Amante del universo visual en todas sus formas, diseño, fotografía, artes plásticas. Nunca no estoy pensando en una paleta de colores.</p>
+              </div>
+              <div>
+                <img src={azul} alt="Azul" />
+                <h3>Azul Celada</h3>
+                <p>Industrial engineering student. Space enthusiast. Loves fluffy animals.</p>
+              </div>
+              <div>
+                <img src={lucas} alt="Lucas" />
+                <h3>Lucas Pettigrosso</h3>
+                <p>Multimedia Design student in the Arts Faculty of UNLP.</p>
+              </div>
+              <div>
+                <img src={fran} alt="Fran" />
+                <h3>Francisco Maciel</h3>
+                <p>studying to become a Business Administrator in the Economics Faculty of the UNLP. He loves numbers and data and it's helping out the team to sort trust-worthy 
+@NASA data that is relevant to our game creation.</p>
+              </div>
+            </Carousel>
           </Section>
         </section>
         <footer>
